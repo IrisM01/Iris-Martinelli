@@ -1,4 +1,7 @@
 # TestPerWebDesign
+
 esercizio di web design
+
 ## scopo del repository 
-questo _repository_ non va
+
+questo __repositor__ non va
