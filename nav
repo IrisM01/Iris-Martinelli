@@ -13,8 +13,7 @@
     <li><a href="#">Contatti</a></li>
   </ul>
 </nav>
-nav {
-<style>
+<style> nav {
   background-color: #333;
   color: #fff;
   overflow: hidden;
@@ -97,3 +96,4 @@ nav .menu li a:hover {
     padding: 20px 10px;
   }
 }
+</style>
