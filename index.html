@@ -1,13 +1,49 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Iris</title>
-</head>
-<body>
-	<h1>Iris</h1>
-	<p>La iris è un genere di piante appartenente alla famiglia delle Iridaceae.</p>
-	<p>Le iris sono note per i loro fiori molto appariscenti, che variano in colori dal bianco al giallo, all'arancione, al rosa, al viola e al blu.</p>
-	<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Iris_versicolor_3.jpg" alt="Iris Versicolor">
-</body>
-</html>
+<nav>
+  <!-- Inserisci il contenuto del tuo navbar qui -->
+</nav>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Chi siamo</a></li>
+    <li><a href="#">Servizi</a></li>
+    <li><a href="#">Contattaci</a></li>
+  </ul>
+</nav>
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+@media (max-width: 768px) {
+  nav li {
+    float: none;
+  }
+
+  nav li a {
+    display: block;
+    text-align: left;
+  }
+}
