@@ -1,0 +1,56 @@
+body{
+    width:100%;
+    font-family:Verdana;
+
+ 
+
+}
+header{
+    width:100%;
+    text-align:center;
+}
+#logo{
+    width:200px;
+    height:200px
+}
+
+ 
+
+.icon {
+    width:30px;
+    height:30px;
+}
+nav {
+    width:100%;
+    background-color:#ADD8E6;
+    text-align:center;
+    
+    }
+
+ 
+
+}
+a:link, a:active {
+    color:#708090;
+
+ 
+
+}
+a:hover {
+    color:#00008B;
+}
+
+ 
+
+li{
+      display:inline;
+    padding:100px;
+}
+
+ 
+
+
+.loghi{
+    width:150px;
+    height:100px;
+}
