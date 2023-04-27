@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+    <title> Noleggio G&C </title>
+    <meta name="autor" content="Giorgia Castagno , Crina Matees" />
+    <meta name="description" content="sito noleggio auto G&C" />
+    <meta name="keywords" content="autonoleggio " />
+<link rel="stylesheet" type="text/css"  href="styleprogetto.css">
+</head>
+
+ 
+
+<body>
+  <header>
+  <img id="logo" src="immagini/logoautonol.png" alt="logo autonoleggio G&C" title="logo NoleggioGC"/>
+</header>
+<nav>
+<ol class="breadcrumb">
+<li class="active"><img src="immagini/home.svg" class="icon" alt="home"><strong>HOME</strong></li>
+<li><a href="chisiamo.html"><img src="immagini/chisiamo.png" class="icon" alt="chi siamo" />CHI SIAMO</a></li>
+<li><a href="contatti.html"><img src="immagini/contatti.svg" class="icon" alt="contatti" />CONTATTI</a></li>
+<li><a href="orari.html"><img src="immagini/orari.svg" class="icon" alt="orari" />ORARI</a></li>
+<li><a href="listamacchine.html"><img src="immagini/car.png" class="icon" alt="lista macchine" />LISTA MACCHINE</a></li>
+<li><a href="tariffe.html"><img src="immagini/tariffe.svg" class="icon" alt="tariffe" />TARIFFE</a></li>
+</ol>
+</nav>
+   <section> 
+   <h1>AUTONOLEGGIO GC MOTORS</h1>
+<img id="immagine" src="immagini/immaginenoleggio.png" alt="immagine 3 macchine" title="auto"/>
+<p><strong>LE MIGLIORI MARCHE AL MIGLIOR PREZZO</strong></p>
+<p>Ricerchiamo fra tutte le agenzie di noleggio auto in Italia per potervi offrire il miglior prezzo. <br/> Dal primo giorno della prenotazione fino al giorno del viaggio, batteremo qualsiasi altro preventivo</p>
+<img class="loghi" src="immagini/logofiat.jpg" alt=" logo fiat" title="Fiat" />
+<img class="loghi" src="immagini/logoaudi.png" alt="logo audi" title="Audi" />
+<img class="loghi" src="immagini/logolancia.jpg" alt=" logo lancia" title="Lancia" />
+<img class="loghi" src="immagini/logojeep.jpg" alt="logo jeep" title="Jeep"  />
+<img class="loghi" src="immagini/logovw.png" alt="logo volkswagen" title="Volkswagen" />
+<img class="loghi" src="immagini/logomercedes.jpg" alt="logo mercedes" title="Mercedes" />
+</section>
+
+<aside>
+<a href="appuntamento.html"><img id="appuntamento" src="immagini/appuntamento.png" alt="appuntamento"> Richiedi un appuntamento qui</a>
+</aside>
+<footer> &copy; Giorgia Castagnoe Crina Matees, LaboratorioHTMLeCSS</footer>
+</body>
+</html>
