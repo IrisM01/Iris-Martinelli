@@ -1,50 +1,217 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-    <title> Impresa Edile Martinelli Paolo </title>
-    <meta name="autor" content="Iris Martinelli" />
-    <meta name="description" content="sito Impresa Edile Martinelli Paolo" />
-    <meta name="keywords" content="impresa edile " />
-<link rel="stylesheet" type="text/css"  href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="X-UA-Compatible" content="ie=edge">
+  <title>Impresa Edile Martinelli Paolo</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://kit.fontawesome.com/d448582808.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playball&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
+ <body>
 
-  <header>
-  <img id="logo" src="immagini/logo.jpg" width=100 height=100 alt="logo Impresa Edile Martinelli Paolo" title="logo Impresa"/>
-</header>
-<nav>
- <ol class="breadcrumb">
- <li class="active"><img src="immagini/home.svg" class="icon" alt="home"><strong>HOME</strong></li>
- <li><a href="chisiamo.html"><img src="immagini/chisiamo.png" class="icon" alt="chi siamo" />CHI SIAMO</a></li>
- <li><a href="contatti.html"><img src="immagini/contatti.svg" class="icon" alt="contatti" />CONTATTI</a></li>
- <li><a href="orari.html"><img src="immagini/orari.svg" class="icon" alt="orari" />ORARI</a></li>
+<div class="header">
+	<div class="logo">
+	<img src="images/logo.jpg" alt="Image" height="45" width="45">
+	</div>
+	<ul class="menu">
+    <li><a href="">Home</a></li>
+    <li><a href="#chisiamo">Chi Siamo</a></li>
+    <li><a href="#portfolio">Porfolio</a></li>
+	<li><a href="#tendenze">Preventivo</a></li>
+	<li><a href="#accessori">Orari</a></li>
+	</ul>
+
+	<div class="cta">
+		<a href="#footer-main" class="button">Contatti</a>
+	</div>
+	<div class="hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+<!-- Video Iniziale -->
+
+<div class="hero">
+  <div class="hero__content">
+    <h1 class="big-text">SCOPRI LA NUOVA <br/> FRUTTA</h1>
+    <a href="" class="button">Discover More</a>
+  </div>
+   <video autoplay muted loop id="video-back">
+    <source src="images/Banana.mp4">
+   </video>
+</div>
+
+<!-- Slider Immagini -->
+
+<div class="slider">
+    <div class="slide-track">
+      <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+      <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+      <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+	  <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+	  <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+	  <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+	  <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+	  <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+	  <div class="slide">
+        <img src="images/BananaTest.jpeg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chi siamo -->
+
+<div id="chisiamo" class="poster">
+  <div class="poster__img">
+     <img src="images/kiwi.jpg" alt="">
+     <div class="overlay">
+        <div class="text_overlay">KIWI</div>
+     </div>
+  </div>
+  <div class="poster__img">
+    <img src="images/mela.jpg" alt="">
+    <div class="overlay">
+      <div class="text_overlay">MELA</div>
+   </div>
+  </div>
+</div>
+
+<div class="poster">
+  <div class="poster__img">
+     <img src="images/pomodoro.jpg" alt="">
+     <div class="overlay">
+      <div class="text_overlay">POMODORO</div>
+   </div>
+  </div>
+  <div class="poster__img">
+    <img src="images/frutta.jpg" alt="">
+    <div class="overlay">
+      <div class="text_overlay">FRUTTA</div>
+   </div>
+  </div>
+</div>
 
 
- <li><a href="I nostri lavori.html"><img src="immagini/" class="icon" vspace=20px alt="I nostri lavori" />I NOSTRI LAVORI</a></li>
- <li><a href="richiedi preventivo.html"><img src="immagini/" class="icon" alt="richiedi preventivo" />RICHIEDI PREVENTIVO</a></li>
- </ol>
- </nav>
-   <section>
-   <h1>IMPRESA EDILE MARTINELLI PAOLO</h1>
- <img class="immagine" src="immagini/mezzo.png" alt="immagine 3 lavori" title="mezzo 1"/>
- <img class="immagine" src="immagini/mezzo 2.jpg" hspace= 20px  alt="immagine 3 lavori" title="mezzo 2"/>
+<div id="portfolio" class="grid">
+  <div class="col">
+    <h3 class="big-text mt-2">La frutta <br/> del momento</h3>
+  </div>
+  <div class="col">
+  </div>
+</div>
+
+<!-- Panner Immagini -->
+
+<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+  <div> <img src="images/frutta.jpg" class="carousel-cell2" alt=""> </div>
+  <div> <img src="images/kiwi.jpg" class="carousel-cell2" alt=""> </div>
+  <div> <img src="images/pomodoro.jpg" class="carousel-cell2" alt=""> </div>
+  <div> <img src="images/mela.jpg" class="carousel-cell2" alt=""> </div>`
+</div>
+
+<!--
+<div class="row">
+    <div class="column1">
+       <iframe class="yt-video" src="https://www.youtube.com/embed/Db3KInkw-Fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+       </iframe>
+    </div>
+    <div class="column2">
+        <h2>ALCUNI CONSIGLI PER TE</h2>
+        <p>
+
+            Non sai mai se quello che indossi è adatto a te? Vorresti capire quali sono
+          i colori che ti stanno meglio? Non preoccuparti! La nostra assistente virtuale ti aiuterà con qualche consiglio
+        di armocromia. Cosa aspetti? Scarica la guida completa!  </p>
+    </div>
+    <a href="" class="button">Scarica Guida</a>
+</div>
+-->
+
+<div class="google-maps mt-2">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11202.582400857596!2d7.546166049999999!3d45.416485699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4788f46cce86560b%3A0x2501ccb2b7d1bd34!2s10080%20Sparone%20TO!5e0!3m2!1sit!2sit!4v1705747820874!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+</div>
+
+<footer id="footer-main">
+  <div class="footer-grid">
+
+        <section class="footer-1">
+          <h4 class="footer-title">Location</h4>
+            <p>Sparone (Torino, Italia), via Indirizzo</p>
+        </section>
+
+       <section class="footer-2">
+          <h4 class="footer-title">Contatti</h4>
+            <p>(+39) 000-00000 / 000-00000 <br>
+            Scrivere Email</p>
+        </section>
+
+       <section class="footer-3">
+          <h4 class="footer-title">Social</h4>
+           <i class="fa-brands fa-instagram fa-2xl"></i>
+           <i class="fa-brands fa-facebook fa-2xl"></i>
+           <i class="fa-brands fa-twitter fa-2xl"></i>
+       </section>
+
+   </div>
+
+   <div class="copy">
+      <p>Copyright &copy; 2024 IrisMartinelli. All rights reserved.</p>
+   </div>
+
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> ⇧</button>
 
 
- <p><strong>COSTRUISCI IL TUO FUTURO NELLA VALLE ORCO</strong></p>
- <p>Assicuriamo un futuro migliore e sostenibile. <br/> Dal progetto alla costruzione,garantiamo una sicurezza infallibile</p>
- <img class="loghi" src="immagini/" alt=" " title="" />
- <img class="loghi" src="immagini/" alt="" title="" />
- <img class="loghi" src="immagini/" alt=" " title="" />
- <img class="loghi" src="immagini/" alt="" title=""  />
- <img class="loghi" src="immagini/" alt="" title="" />
- <img class="loghi" src="immagini/" alt="" title="" />
- </section>
+<div id="cookiePopup" class="hide">
+    <img src="cookie.png" />
+    <p>
+      Our website uses cookies to provide your browsing experience and
+      relevant information. Before continuing to use our website, you agree &
+      accept of our <a href="#">Cookie Policy & Privacy.</a>
+    </p>
+    <button id="acceptCookie">Accept</button>
+</div>
 
- <aside>
-<a href="appuntamento.html"><img id="appuntamento" src="immagini/appuntamento.png" alt="appuntamento"> Richiedi un appuntamento qui</a>
- </aside>
- <footer> &copy; Iris Martinelli,SitoWebHTMLeCSS</footer>
- </body>
+
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./script.js"></script>
+
+<script src="script.js"></script>
+
+</body>
 </html>
