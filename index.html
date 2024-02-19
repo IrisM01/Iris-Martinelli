@@ -1,136 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Iris Martinelli</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+    <!-- Metadati -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresa Edile Martinelli Paolo</title>
+    <!-- Collegamento al foglio di stile -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>BOH</b> Nome Azienda</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Progetti</a>
-      <a href="#about" class="w3-bar-item w3-button">Chi siamo</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contatti</a>
-    </div>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="images/mezzo.jpg" alt="Architecture" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BOH</b></span> <span class="w3-hide-small w3-text-light-grey">Nome Azienda</span></h1>
-  </div>
+<header>
+    <!-- Intestazione con logo, nome azienda e menu di navigazione -->
+    <img src="images/logo.png" alt="Logo Ditta di Costruzioni" style="max-height: 50px;"> <!-- Logo azienda in alto a sinistra -->
+    <h1 style="margin-left: 10px;">Impresa Edile Martinelli Paolo</h1> <!-- Nome azienda subito dopo il logo -->
+    <nav>
+        <ul>
+            <!-- Pulsanti / Link per accedere alle sezioni -->
+            <li><a href="#intro">Home</a></li> <!-- Link per la sezione intro -->
+            <li><a href="#services">Servizi</a></li> <!-- Link per la sezione servizi -->
+            <li><a href="#about">Chi siamo</a></li> <!-- Link per la sezione chi siamo -->
+            <li><a href="#contact">Preventivi</a></li> <!-- Link per la sezione preventivi -->
+        </ul>
+    </nav>
 </header>
 
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<section id="intro" class="intro">
+    <!-- Sezione di introduzione con un'immagine -->
+    <img src="images/Homepage.jpg" alt="Introduzione">
+</section>
 
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Progetti</h3>
-  </div>
+<section class="hero">
+    <!-- Sezione di presentazione dell'azienda -->
+    <h2>Benvenuti alla nostra ditta di costruzioni</h2>
+    <p>Siamo un’azienda edile del Canavese nata nel 2000 a Sparone.<br> 
+    Ci occupiamo di soddisfare i bisogni del cliente in maniera rapida ed efficiente. 
+    Lavoriamo a stretto contatto con l’ambiente e ci assicuriamo di soddisfare a pieno le esigenze di ognuno di voi.</p>
+    <a href="#services" class="btn">Scopri di più</a>
+</section>
 
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Esterni / Internix</div>
-        <img src="images/esterni.jpg" alt="House" style="width:100%">
-      </div>
+<section id="services" class="services-container">
+    <!-- Sezione dei servizi offerti -->
+    <div class="services">
+        <div class="service">
+            <!-- Servizio Interni -->
+            <img src="images/Interni01.jpg" alt="Interni">
+			<h3>Interni</h3>
+			<p>Servizi di progettazione e realizzazione per gli interni delle abitazioni.</p>
+		</div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Muri in pietra</div>
-        <img src="images/muri2.jpg" alt="House" style="width:100%">
-      </div>
+    <div class="services">
+        <div class="service">
+			<img src="images/Esterni02.jpg" alt="Esterni">
+			<h3>Esterni</h3>
+			<p>Servizi di costruzione e manutenzione per gli spazi esterni, come giardini e cortili.</p>
+			</div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Tetti / Pavimentazioni</div>
-        <img src="images/pavimento.jpg" alt="House" style="width:100%">
-      </div>
+    <div class="services">
+        <div class="service">
+			<img src="images/Muri01.jpg" alt="Muri">
+			<h3>Muri</h3>
+			<p>Servizi di muratura e rifacimento muri per edifici residenziali e commerciali.</p>
+			</div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Carpenteria</div>
-        <img src="images/carpenteria.jpg" alt="House" style="width:100%">
-      </div>
+    <div class="services">
+        <div class="service">
+			<img src="images/Tetti01.jpg" alt="Tetti">
+			<h3>Tetti</h3>
+			<p>Servizi di costruzione, riparazione e isolamento di tetti per ogni tipo di edificio.</p>
+			</div>
     </div>
-  </div>
+    <div class="services">
+        <div class="service">
+			<img src="images/Carpenteria02.jpg" alt="Carpenteria">
+			<h3>Carpenteria</h3>
+			<p>Servizi di carpenteria per la realizzazione di strutture metalliche su misura.</p>
+			</div>
+    </div>
+</section>
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Chi siamo</h3>
-    <p>Siamo un’azienda edile del Canavese nata nel 2000 a Sparone. 
-	Ci occupiamo di soddisfare i bisogni del cliente in maniera rapida ed efficiente. 
-	Lavoriamo a stretto contatto con l’ambiente e ci assicuriamo di soddisfare a pieno le esigente di ognuno di voi .
-    </p>
-  </div>
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="images/frutta.jpg" alt="John" style="width:100%">
-      <h3>Nome 1</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Descrizione 1</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contatti</button></p>
+<section id="about" class="about">
+    <!-- Sezione dedicata a chi siamo -->
+    <h2>Chi siamo</h2>
+    <div class="employee">
+        <!-- Informazioni sui dipendenti -->
+        <img src="images/01_MartinelliPaolo.jpg" alt="Employee 1">
+        <h3>Paolo Martinelli</h3>
+        <p>Titolare</p>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="images/frutta.jpg" alt="Jane" style="width:100%">
-      <h3>Nome 2</h3>
-      <p class="w3-opacity">Ruolo</p>
-      <p>Descrizione 2</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contatti</button></p>
+    <div class="employee">
+        <img src="images/02_LevdochachAnatolii.jpg" alt="Employee 2">
+        <h3>Anatolii Levdochach</h3>
+        <p>Responsabile cantiere</p>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="images/frutta.jpg" alt="Mike" style="width:100%">
-      <h3>Nome 3</h3>
-      <p class="w3-opacity">Ruolo</p>
-      <p>Descrizione 3</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contatti</button></p>
+    <div class="employee">
+        <img src="images/03_MarcoRiva.jpg" alt="Employee 2">
+        <h3>Marco Riva</h3>
+        <p>Operaio Specializzato</p>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="images/frutta.jpg" alt="Dan" style="width:100%">
-      <h3>Nome 4</h3>
-      <p class="w3-opacity">Ruolo</p>
-      <p>Descrizione 4</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contatti</button></p>
+    <div class="employee">
+        <img src="images/04_DimytroLeiba.jpg" alt="Employee 2">
+        <h3>Dimytro Leiba</h3>
+        <p>Operaio</p>
     </div>
-  </div>
+</section>
 
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contatti</h3>
-    <p>Scrivici per un preventivo.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Soggetto" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Commento" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> INVIA MESSAGGIO
-      </button>
-    </form>
-  </div>
-  
-<!-- Image of location/map -->
-<div class="w3-container">
-  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-</div>
+<section id="contact" class="contact">
+    <!-- Sezione per richiedere un preventivo -->
+    <h2>Preventivo</h2>
+    <div class="contact-form">
+        <!-- Modulo di contatto -->
+        <form>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Oggetto:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn" onclick="submitForm()">Invia</button>
+        </form>
+    </div>
+</section>
 
-<!-- End page content -->
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5601.290464876011!2d7.541016197728455!3d45.416493115394516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4788f46cce86560b%3A0x2501ccb2b7d1bd34!2s10080%20Sparone%2C%20Metropolitan%20City%20of%20Turin!5e0!3m2!1sen!2sit" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer>
+    <!-- Sezione footer -->
+    <p>&copy; 2024 Impresa Edile Martinelli Paolo. Tutti i diritti riservati.</p>
 </footer>
 
 </body>
