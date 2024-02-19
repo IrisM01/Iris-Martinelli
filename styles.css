@@ -10,23 +10,25 @@ body {
     line-height: 1.6;
     background-color: #f8f9fa; /* Colore di sfondo generale */
     color: #333; /* Colore del testo principale */
+    font-size: 16px; /* Dimensione del testo di base */
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Allinea il contenuto ai margini */
-    background-color: #343a40; /* Colore di sfondo dell'intestazione */
+    justify-content: space-between;
+    background-color: #343a40;
     color: #fff;
-    padding: 20px;
+    padding: 2vw;
 }
 
 header img {
-    max-height: 50px;
+    max-height: 10vw; /* Altezza massima in base alla larghezza della finestra */
 }
 
 header h1 {
-    margin-left: 10px;
+    margin-left: 2vw; /* Margine in base alla larghezza della finestra */
+    font-size: 3vw; /* Dimensione del testo in base alla larghezza della finestra */
 }
 
 nav ul {
@@ -37,7 +39,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 3vw; /* Margine in base alla larghezza della finestra */
 }
 
 nav ul li:first-child {
@@ -48,13 +50,15 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px; /* Aggiunta di padding per rendere i pulsanti/link più cliccabili */
+    padding: 1vw 2vw;
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Cambio di colore al passaggio del mouse */
-    border-radius: 5px; /* Arrotondamento dei bordi */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
+
+
 
 
 .hero {
@@ -63,16 +67,20 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.services {
+.services-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 40px;
+    justify-content: center; /* Centra orizzontalmente il contenitore delle sezioni */
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* La griglia si adatta automaticamente alla larghezza della finestra */
+    gap: 20px; /* Spazio tra le colonne e le righe */
+    max-width: 100%; /* Larghezza massima */
+    padding: 0 20px; /* Aggiunto padding per migliorare lo spaziamento sui bordi */
 }
 
 .service {
-    width: 250px;
-    margin: 20px;
     text-align: center;
     background-color: #fff;
     border-radius: 8px;
@@ -81,9 +89,10 @@ nav ul li a:hover {
 }
 
 .service img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Larghezza al 100% per adattarsi al riquadro */
+    height: auto; /* Altezza automatica */
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .service h3, .service p {
@@ -126,7 +135,7 @@ footer {
 .intro img {
     width: 100%;
     height: auto;
-	object-fit: cover;
+    object-fit: cover;
 }
 
 .contact {
@@ -188,7 +197,7 @@ iframe {
     display: table;
     clear: both;
 }
-`
+
 .fade {
     display: none;
     animation: fadeEffect 1s;
@@ -251,11 +260,8 @@ iframe {
     background-color: #717171;
 }
 
-/* Aggiungi qui il tuo CSS personalizzato */
 .slider-container {
-    width: 800px;
-    height: 400px;
-    margin: 0 auto;
+    width: 100%; /* Larghezza al 100% per adattarsi al dispositivo */
     overflow: hidden;
     position: relative;
 }
@@ -303,45 +309,4 @@ iframe {
 
 #slider-image-4:target ~ .image-container {
     left: -300%;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* La griglia si adatta automaticamente alla larghezza della finestra */
-    gap: 20px; /* Spazio tra le colonne e le righe */
-}
-
-.grid-item {
-    text-align: center;
-}
-
-.grid-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-
-.services-container {
-    display: flex;
-    justify-content: center; /* Centra orizzontalmente il contenitore delle sezioni */
-}
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* La griglia si adatta automaticamente alla larghezza della finestra */
-    gap: 20px; /* Spazio tra le colonne e le righe */
-}
-
-.service {
-    text-align: center;
-}
-
-.service img {
-    width: 100%; /* Larghezza al 100% per adattarsi al riquadro */
-    height: 200px; /* Altezza fissa per garantire un riquadro quadrato */
-    object-fit: cover; /* Mantenere l'aspetto dell'immagine senza distorsioni */
-    border-radius: 8px;
-    margin-bottom: 10px;
 }
