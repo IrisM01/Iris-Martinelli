@@ -72,6 +72,7 @@ nav ul li a:hover {
 .services-container {
     display: flex;
     justify-content: center; /* Centra orizzontalmente il contenitore delle sezioni */
+	flex-wrap: wrap; /* Per consentire il wrapping degli elementi su più righe */
 }
 
 /* Servizi */
@@ -81,6 +82,7 @@ nav ul li a:hover {
     gap: 20px; /* Spazio tra le colonne e le righe */
     max-width: 100%; /* Larghezza massima */
     padding: 10px; /* Aggiunto padding per migliorare lo spaziamento sui bordi */
+	flex: 1 0 50%; /* Occupa il 50% della larghezza disponibile, su due colonne */
 }
 
 .service {
