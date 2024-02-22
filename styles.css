@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Stile del corpo della pagina */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -13,6 +14,7 @@ body {
     font-size: 16px; /* Dimensione del testo di base */
 }
 
+/* Intestazione */
 header {
     display: flex;
     align-items: center;
@@ -31,6 +33,7 @@ header h1 {
     font-size: 3vw; /* Dimensione del testo in base alla larghezza della finestra */
 }
 
+/* Menu di navigazione */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -58,26 +61,26 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-
-
-
+/* Sezione hero */
 .hero {
     background-color: #f4f4f4;
     padding: 50px 0;
     text-align: center;
 }
 
+/* Container dei servizi */
 .services-container {
     display: flex;
     justify-content: center; /* Centra orizzontalmente il contenitore delle sezioni */
 }
 
+/* Servizi */
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* La griglia si adatta automaticamente alla larghezza della finestra */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Modifica la larghezza minima delle colonne */
     gap: 20px; /* Spazio tra le colonne e le righe */
     max-width: 100%; /* Larghezza massima */
-    padding: 0 20px; /* Aggiunto padding per migliorare lo spaziamento sui bordi */
+    padding: 10px; /* Aggiunto padding per migliorare lo spaziamento sui bordi */
 }
 
 .service {
@@ -99,6 +102,7 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
+/* Sezione Chi siamo */
 .about {
     background-color: #f9f9f9;
     padding: 50px 0;
@@ -121,6 +125,7 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
+/* Footer */
 footer {
     background-color: #343a40;
     color: #fff;
@@ -128,6 +133,7 @@ footer {
     text-align: center;
 }
 
+/* Sezione Introduzione */
 .intro {
     text-align: center;
 }
@@ -138,6 +144,7 @@ footer {
     object-fit: cover;
 }
 
+/* Sezione Contatti */
 .contact {
     background-color: #fff;
     padding: 50px 0;
@@ -186,18 +193,21 @@ footer {
     background-color: #555;
 }
 
+/* Iframe per la mappa */
 iframe {
     margin: 0 auto;
     display: block;
     border: none;
 }
 
+/* Clearfix */
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* Effetto fade per le slide */
 .fade {
     display: none;
     animation: fadeEffect 1s;
@@ -208,10 +218,20 @@ iframe {
     to {opacity: 1}
 }
 
-.mySlides img {
+/* Stili specifici per le immagini delle slide */
+.mySlidesInterni img,
+.mySlidesEsterni img,
+.mySlidesMuri img,
+.mySlidesTetti img,
+.mySlidesCarpenteria img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 200px;
 }
 
+/* Pulsanti per passare alle slide precedenti e successive */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -235,16 +255,7 @@ iframe {
     background-color: rgba(0,0,0,0.8);
 }
 
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
+/* Pulsanti punti per la navigazione tra le slide */
 .dot {
     cursor:pointer;
     height: 15px;
@@ -260,53 +271,29 @@ iframe {
     background-color: #717171;
 }
 
-.slider-container {
-    width: 100%; /* Larghezza al 100% per adattarsi al dispositivo */
-    overflow: hidden;
-    position: relative;
-}
-
-.image-container {
-    width: 400%;
-    height: 100%;
-    display: flex;
-    transition: left 0.5s; /* Aggiunto per la transizione fluida */
-}
-
-.slider-image {
+/* Banner dei cookie */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999; /* Imposta un valore alto per garantire che il banner dei cookies sia sopra gli altri elementi */
 }
 
-.button-container {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+.cookie-consent p {
+    margin: 0;
 }
 
-.slider-change {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: brown;
-    margin: 0 5px;
-}
-
-/* Aggiunto per far funzionare lo slideshow */
-#slider-image-1:target ~ .image-container {
-    left: 0%;
-}
-
-#slider-image-2:target ~ .image-container {
-    left: -100%;
-}
-
-#slider-image-3:target ~ .image-container {
-    left: -200%;
-}
-
-#slider-image-4:target ~ .image-container {
-    left: -300%;
+.cookie-consent button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
 }
